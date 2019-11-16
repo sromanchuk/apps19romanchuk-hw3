@@ -20,7 +20,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
         boolean flag = true;
         for (int i = 0; i < res.length - 1; i++) {
             for (int j = i + 1; j < res.length; j++) {
-                if (arr[i].equals(arr[j])){
+                if (arr[i].equals(arr[j])) {
                     flag = false;
                 }
             }
@@ -33,7 +33,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
     }
 
     @Override
-    public Object[] toArray(){
+    public Object[] toArray() {
         return this.smartArray.toArray();
     }
 
@@ -43,7 +43,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
     }
 
     @Override
-    public int size(){
+    public int size() {
         return this.smartArray.toArray().length;
     }
 }

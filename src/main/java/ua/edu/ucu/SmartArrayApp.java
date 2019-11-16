@@ -77,9 +77,9 @@ public class SmartArrayApp {
                 String str2 = st2.getSurname();
                 int len1 = str1.length();
                 int len2 = str2.length();
-                int minLen = Math.min(len1,len2);
-                for (int i = 0; i < minLen; i++){
-                    if (str1.charAt(i) != str2.charAt(i)){
+                int minLen = Math.min(len1, len2);
+                for (int i = 0; i < minLen; i++) {
+                    if (str1.charAt(i) != str2.charAt(i)) {
                         return str1.charAt(i) - str2.charAt(i);
                     }
                 }

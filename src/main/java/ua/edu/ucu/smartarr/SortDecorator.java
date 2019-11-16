@@ -20,7 +20,7 @@ public class SortDecorator extends SmartArrayDecorator {
     }
 
     @Override
-    public String operationDescription(){
+    public String operationDescription() {
         return "sort smartArray";
     }
 

@@ -9,7 +9,7 @@ public class FilterDecorator extends SmartArrayDecorator {
 
     public FilterDecorator(SmartArray sa, MyPredicate pr) {
         super(sa);
-        Object[] res = this.predication(sa,pr);
+        Object[] res = this.predication(sa, pr);
         this.smartArray = new BaseArray(res);
     }
 
