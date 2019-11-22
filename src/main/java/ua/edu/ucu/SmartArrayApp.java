@@ -103,11 +103,11 @@ public class SmartArrayApp {
         };
 
         SmartArray studentSmartArray = new BaseArray(students);
-        studentSmartArray = new DistinctDecorator(studentSmartArray);
         studentSmartArray = new FilterDecorator(studentSmartArray, prGPA);
         studentSmartArray = new FilterDecorator(studentSmartArray, prYear);
         studentSmartArray = new SortDecorator(studentSmartArray, cmpSurname);
         studentSmartArray = new MapDecorator(studentSmartArray, funcName);
+        studentSmartArray = new DistinctDecorator(studentSmartArray);
 
         // Hint: to convert Object[] to String[] - use the following code
         Object[] result = studentSmartArray.toArray();
